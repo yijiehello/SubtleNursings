@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.subtlenursing.view.activity.MainActivity">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        >
+    </android.support.v4.view.ViewPager>
+    <LinearLayout
+        android:id="@+id/down_ll"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/forum_ll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/forum_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forum"
+                android:textColor="@color/greenlight"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                />
+            <ImageView
+                android:id="@+id/forum_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/forumgreen"
+                android:layout_marginBottom="3dp"
+                android:layout_above="@+id/forum_tv"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/classroom_ll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/classroom_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/classroom"
+                android:textColor="@color/greytext"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                />
+            <ImageView
+                android:id="@+id/classroom_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/classroomgrey"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/classroom_tv"
+                android:layout_marginBottom="3dp"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/welfare_ll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/welfare_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/welfareCenter"
+                android:textColor="@color/greytext"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                />
+            <ImageView
+                android:id="@+id/welfare_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/welfaregrey"
+                android:layout_above="@+id/welfare_tv"
+                android:layout_marginBottom="3dp"
+                android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/my_ll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/my_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/my"
+                android:textColor="@color/greytext"
+                android:textSize="10sp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                />
+            <ImageView
+                android:id="@+id/my_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@mipmap/mygrey"
+                android:layout_centerHorizontal="true"
+                android:layout_above="@id/my_tv"
+                android:layout_marginBottom="3dp"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/greywhitelight"
+        android:layout_above="@id/down_ll"/>
+
+</RelativeLayout>
